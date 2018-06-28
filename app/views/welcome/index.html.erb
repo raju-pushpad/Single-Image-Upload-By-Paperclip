@@ -1,0 +1,7 @@
+<%= form_for @user, url: {action: "create"}, html: { multipart: true } do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %><br/>
+<%= f.label :image %>
+  <%= f.file_field :image %><br/>
+  <%= f.submit %>
+<% end %>
